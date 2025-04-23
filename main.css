@@ -1,0 +1,145 @@
+.p-t-10 {
+    padding-top: 10px;
+}
+.p-t-5 {
+    padding-top: 5px;
+}
+.m-t-10 {
+    margin-top: 10px;
+}
+.m-t-5 {
+    margin-top: 5px;
+}
+.m-t-15 {
+    margin-top: 15px;
+}
+.text-background {
+    background-color: #202e3c;
+    text-align: left;
+    color: #ffd600;
+    font-size:30px;
+    padding-top:30px;
+}
+.text-background-2 {
+    background-color: #202e3c;
+    text-align: left;
+    color: #ffd600;
+    font-size: clamp(0.8rem, 2vw, 3rem);
+    width: 100%;
+    
+}
+.text-background-2 img {
+    width: 3%;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+  }
+
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    /* gap: 10px; */
+    flex-wrap: nowrap; 
+}
+  
+.item {
+    text-align: center;
+    width: 24.5%;
+}
+
+.item :hover {
+    border: 2px solid #ff0000; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+  
+.item img {
+    width: 100%;
+    object-fit: fill;
+    display: block;
+    aspect-ratio: 1/1;
+}
+  
+
+.middle-text {
+    font-size: clamp(0.8rem, 2vw, 1.2rem);
+    font-weight: bold;
+    text-align: center;
+}
+
+.footer {
+    font-size: clamp(0.8rem, 2vw, 1.2rem);
+    font-weight: 700;
+}
+
+.marquee-container {
+    height: 80vh;
+    width: 100%;
+}
+
+.marquee-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 900px) {
+    .gallery {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .item {
+        width: 48%; 
+        margin-bottom: 10px;
+    }
+
+    .middle-text {
+        font-size: 20px;
+    }
+    .text-background-2 {
+        font-size: 25px;
+    }
+    .text-background-2 img {
+        width: 5%;
+        aspect-ratio: 1 / 1;
+        object-fit: contain;
+      }
+      .marquee-container {
+        height: 40vh;
+        width: 100%;
+    }
+
+    
+}
+
+
+@media only screen and (max-width: 500px) {
+    .gallery {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .item {
+        width: 100%; 
+        margin-bottom: 10px; 
+    }
+
+    .text-background-2 img {
+        width: 8%;
+        aspect-ratio: 1 / 1;
+        object-fit: contain;
+      }
+
+    .middle-text {
+        font-size: 15px;
+    }
+    .text-background-2 {
+        font-size: 20px;
+    }
+
+    .marquee-container {
+        height: 20vh;
+        width: 100%;
+    }
+}
+  
+ 
